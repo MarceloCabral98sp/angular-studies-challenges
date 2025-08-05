@@ -14,6 +14,7 @@ export class Contador implements OnInit, OnDestroy {
   ngOnInit(): void {
     console.log('ContadorComponent inicializado');
     this.intervalo = setInterval(() => {
+      console.log(this.contador);
       this.contador++;
     }, 1000)
   }
